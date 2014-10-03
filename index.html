@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <title>Out of Ink</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function tab_selector(i){
+            
+        }
+
+    </script>
 </head>
 <body>
     <div class="container" align="center">
         <div class="head">
             <ul>
                  <li style="padding-left: 0">
-                     <a href="#home">Home</a>
+                     <a href="#1" onmousedown="tab_selector(1)">Home</a>
                 </li>
                 <li>
-                    <a href="#about"> About</a>
+                    <a href="#2" onmousedown="tab_selector(2)"> About</a>
                 </li>
                 <li>
-                    <a href="#details"> Event Details</a>
+                    <a href="#3" onmousedown="tab_selector(3)"> Event Details</a>
                 </li>
                 <li>
-                    <a href="#register"> Register</a>
+                    <a href="#4" onmousedown="tab_selector(4)"> Register</a>
                 </li>
                 <li>
-                    <a href="#organisers"> Organisers</a>
+                    <a href="#5" onmousedown="tab_selector(5)"> Organisers</a>
                 </li>
                 <li>
-                    <a href="#sponsors">Sponsors</a>
+                    <a href="#6" onmousedown="tab_selector(6)">Sponsors</a>
                 </li>
             </ul>
         </div>
-        <div class="first tab" id="home">
+        <div class="first tab" id="1">
             <img class="logo" src="1.png" />
 
         </div>
-        <div class="second tab" id="about">
+        <div class="second tab" id="2">
             <header>
                 About
             </header>
@@ -45,18 +51,18 @@
             </article>
 
         </div>
-        <div class="third tab" id="details">
+        <div class="third tab" id="3">
 
 
         </div>
-        <div class="fourth tab" id="register">
+        <div class="fourth tab" id="4">
             <form>
                 <label>Name:</label> <input type="text" name="name" />
                 <label>Phone:</label> <input type="number" name="phone" />
                 <label>E-mail:</label> <input type="email" name="email" />
             </form>
         </div>
-        <div class="fifth tab" id="organisers">
+        <div class="fifth tab" id="5">
             <header>
                 Organisers
             </header>
@@ -81,9 +87,12 @@
                     Our mission is to educate students from all over India, including those from the local and rural areas, and from other countries, so they become enlightened individuals, improving the living standards of their families, industry and society.
                 </p>
             </article>
+            <article style="margin-top: -5%">
+                <p>logos of csed and vit with link</p>
+            </article>
 
         </div>
-        <div class="sixth tab" id="sponsors">
+        <div class="sixth tab" id="6">
 
         </div>
         <div class="footer"></div>
