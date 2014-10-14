@@ -5,8 +5,14 @@
     <title>Out of Ink</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
+        var x = 1;
         function tab_selector(i){
-            
+
+            var id =  document.getElementById(i.toString());
+            id.style.display = "block";
+            document.getElementById(x.toString()).style.display = "none";
+            x = i;
+
         }
 
     </script>
@@ -16,30 +22,31 @@
         <div class="head">
             <ul>
                  <li style="padding-left: 0">
-                     <a href="#1" onmousedown="tab_selector(1)">Home</a>
+                     <a href="#" onmousedown="tab_selector(1)">Home</a>
                 </li>
                 <li>
-                    <a href="#2" onmousedown="tab_selector(2)"> About</a>
+                    <a href="#" onmousedown="tab_selector(2)"> About</a>
                 </li>
                 <li>
-                    <a href="#3" onmousedown="tab_selector(3)"> Event Details</a>
+                    <a href="#" onmousedown="tab_selector(3)"> Event Details</a>
                 </li>
                 <li>
-                    <a href="#4" onmousedown="tab_selector(4)"> Register</a>
+                    <a href="#" onmousedown="tab_selector(4)"> Register</a>
                 </li>
                 <li>
-                    <a href="#5" onmousedown="tab_selector(5)"> Organisers</a>
+                    <a href="#" onmousedown="tab_selector(5)"> Organisers</a>
                 </li>
                 <li>
-                    <a href="#6" onmousedown="tab_selector(6)">Sponsors</a>
+                    <a href="#" onmousedown="tab_selector(6)">Sponsors</a>
                 </li>
             </ul>
         </div>
-        <div class="first tab" id="1">
+        <div class="tab" id="1">
             <img class="logo" src="1.png" />
+        </div>
 
         </div>
-        <div class="second tab" id="2">
+        <div class="tab" id="2" style="display: none">
             <header>
                 About
             </header>
@@ -51,18 +58,18 @@
             </article>
 
         </div>
-        <div class="third tab" id="3">
+        <div class="third tab" id="3" style="display: none">
 
 
         </div>
-        <div class="fourth tab" id="4">
+        <div class="fourth tab" id="4" style="display: none">
             <form>
                 <label>Name:</label> <input type="text" name="name" />
                 <label>Phone:</label> <input type="number" name="phone" />
                 <label>E-mail:</label> <input type="email" name="email" />
             </form>
         </div>
-        <div class="fifth tab" id="5">
+        <div class="fifth tab" id="5" style="display: none">
             <header>
                 Organisers
             </header>
@@ -92,10 +99,10 @@
             </article>
 
         </div>
-        <div class="sixth tab" id="6">
+        <div class="sixth tab" id="6" style="display: none">
 
         </div>
         <div class="footer"></div>
-    </div>
+
 </body>
 </html>
