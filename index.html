@@ -4,48 +4,212 @@
     <meta charset="UTF-8">
     <title>Out of Ink</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
+
     <script type="text/javascript">
         var x = 1;
         function tab_selector(i){
-
+            if(x!=i){
             var id =  document.getElementById(i.toString());
             id.style.display = "block";
-            document.getElementById(x.toString()).style.display = "none";
+                disappear(x);
+                animate(i);
             x = i;
+            }
 
         }
+        function disappear(x){
+            if(x==1){
+                $( document.getElementById('about') ).click(function() {
+                    $( "#toggle1" ).hide( "drop" );
+                });
+                $( document.getElementById('event') ).click(function() {
+                    $( "#toggle1" ).hide( "drop" );
+                });
+                $( document.getElementById('reg') ).click(function() {
+                    $( "#toggle1" ).hide( "drop" );
+                });
+                $( document.getElementById('org') ).click(function() {
+                    $( "#toggle1" ).hide( "drop" );
+                });
+                $( document.getElementById('spon') ).click(function() {
+                    $( "#toggle1" ).hide( "drop" );
+                });
+            }
+            if(x==2){
+                $( document.getElementById('home') ).click(function() {
+                    $( "#toggle2" ).hide( "fade" );
+                });
+                $( document.getElementById('event') ).click(function() {
+                    $( "#toggle2" ).hide( "fade" );
+                });
+                $( document.getElementById('reg') ).click(function() {
+                    $( "#toggle2" ).hide( "fade" );
+                });
+                $( document.getElementById('org') ).click(function() {
+                    $( "#toggle2" ).hide( "fade" );
+                });
+                $( document.getElementById('spon') ).click(function() {
+                    $( "#toggle2" ).hide( "fade" );
+                });
+            }
+            if(x==3){
+                $( document.getElementById('home') ).click(function() {
+                    $( "#toggle3" ).hide( "blind" );
+                });
+                $( document.getElementById('about') ).click(function() {
+                    $( "#toggle3" ).hide( "blind" );
+                });
+                $( document.getElementById('reg') ).click(function() {
+                    $( "#toggle3" ).hide( "blind" );
+                });
+                $( document.getElementById('org') ).click(function() {
+                    $( "#toggle3" ).hide( "blind" );
+                });
+                $( document.getElementById('spon') ).click(function() {
+                    $( "#toggle3" ).hide( "blind" );
+                });
+            }
+            if(x==4){
+                $( document.getElementById('home') ).click(function() {
+                    $( "#toggle4" ).hide( "explode" );
+                });
+                $( document.getElementById('about') ).click(function() {
+                    $( "#toggle4" ).hide( "explode" );
+                });
+                $( document.getElementById('event') ).click(function() {
+                    $( "#toggle4" ).hide( "explode" );
+                });
+                $( document.getElementById('org') ).click(function() {
+                    $( "#toggle4" ).hide( "explode" );
+                });
+                $( document.getElementById('spon') ).click(function() {
+                    $( "#toggle4" ).hide( "explode" );
+                });
+            }
+            if(x==5){
+                $( document.getElementById('home') ).click(function() {
+                    $( "#toggle5" ).hide( "explode" );
+                });
+                $( document.getElementById('about') ).click(function() {
+                    $( "#toggle5" ).hide( "explode" );
+                });
+                $( document.getElementById('event') ).click(function() {
+                    $( "#toggle5" ).hide( "explode" );
+                });
+                $( document.getElementById('reg') ).click(function() {
+                    $( "#toggle5" ).hide( "explode" );
+                });
+                $( document.getElementById('spon') ).click(function() {
+                    $( "#toggle5" ).hide( "explode" );
+                });
+            }
+            if(x==6){
+                $( document.getElementById('home') ).click(function() {
+                    $( "#toggle6" ).hide( "explode" );
+                });
+                $( document.getElementById('about') ).click(function() {
+                    $( "#toggle6" ).hide( "explode" );
+                });
+                $( document.getElementById('event') ).click(function() {
+                    $( "#toggle6" ).hide( "explode" );
+                });
+                $( document.getElementById('reg') ).click(function() {
+                    $( "#toggle6" ).hide( "explode" );
+                });
+                $( document.getElementById('org') ).click(function() {
+                    $( "#toggle6" ).hide( "explode" );
+                });
+            }
+        }
+        function animate(i){
 
+            if(i==1){
+
+                $( document.getElementById('home') ).click(function() {
+                    $( "#toggle1" ).show( "drop" );
+                });
+
+            }
+            if(i==2){
+
+                $( document.getElementById('about') ).click(function() {
+                    $( "#toggle2" ).show( "fade" );
+                });
+
+            }
+            if(i==3){
+
+                $( document.getElementById('event') ).click(function() {
+                    $( "#toggle3" ).show( "blind" );
+                });
+
+            }
+            if(i==4){
+
+                $( document.getElementById('reg') ).click(function() {
+                    $( "#toggle4" ).show( "explode" );
+                });
+
+            }
+            if(i==5){
+
+                $( document.getElementById('org') ).click(function() {
+                    $( "#toggle5" ).show( "explode" );
+                });
+
+            }
+            if(i==6){
+
+                $( document.getElementById('spon') ).click(function() {
+                    $( "#toggle6" ).show( "explode" );
+                });
+
+            }
+        }
     </script>
+
+
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="node_modules/jquery-ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
 </head>
-<body>
+<body onload="disappear(1);disappear(2);disappear(3);disappear(4);disappear(5);disappear(6);animate(1);">
     <div class="container" align="center">
         <div class="head">
             <ul>
-                 <li style="padding-left: 0">
-                     <a href="#" onmousedown="tab_selector(1)">Home</a>
+                 <li style="padding-left: 0" id="home">
+                     <a href="#" onmousedown="tab_selector(1); disappear(1);">Home</a>
                 </li>
-                <li>
+                <li id="about">
                     <a href="#" onmousedown="tab_selector(2)"> About</a>
                 </li>
-                <li>
+                <li id="event">
                     <a href="#" onmousedown="tab_selector(3)"> Event Details</a>
                 </li>
-                <li>
+                <li id="reg">
                     <a href="#" onmousedown="tab_selector(4)"> Register</a>
                 </li>
-                <li>
+                <li id="org">
                     <a href="#" onmousedown="tab_selector(5)"> Organisers</a>
                 </li>
-                <li>
+                <li id="spon">
                     <a href="#" onmousedown="tab_selector(6)">Sponsors</a>
                 </li>
             </ul>
         </div>
-        <div class="tab" id="1">
+       <!-- <div id="toggle">-->
+
+        <div id="toggle1">
+        <div class="tab" id="1" style="background: rgba(155,115,0,0.5 );">
             <img class="logo" src="1.png" />
         </div>
 
+
         </div>
+
+        <div id="toggle2">
         <div class="tab" id="2" style="display: none">
             <header>
                 About
@@ -58,10 +222,14 @@
             </article>
 
         </div>
+            </div>
+        <div id="toggle3">
         <div class="third tab" id="3" style="display: none">
 
 
         </div>
+        </div>
+        <div id="toggle4">
         <div class="fourth tab" id="4" style="display: none">
             <form>
                 <label>Name:</label> <input type="text" name="name" />
@@ -69,6 +237,8 @@
                 <label>E-mail:</label> <input type="email" name="email" />
             </form>
         </div>
+        </div>
+        <div id="toggle5">
         <div class="fifth tab" id="5" style="display: none">
             <header>
                 Organisers
@@ -94,15 +264,24 @@
                     Our mission is to educate students from all over India, including those from the local and rural areas, and from other countries, so they become enlightened individuals, improving the living standards of their families, industry and society.
                 </p>
             </article>
-            <article style="margin-top: -5%">
+            <article style="margin-top: -7%">
                 <p>logos of csed and vit with link</p>
             </article>
 
         </div>
+        </div>
+        <div id="toggle6">
         <div class="sixth tab" id="6" style="display: none">
 
         </div>
-        <div class="footer"></div>
+        </div>
+        <div class="footer">
+
+
+
+
+        </div>
+        </div>
 
 </body>
 </html>

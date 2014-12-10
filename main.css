@@ -2,14 +2,14 @@ html,body{
     height: 100%;
 }
 body{
-    background: rgba(0,0,0,0.8);
+
     text-align: center;
     padding: 0;
     margin: 0;
 }
 #1{
     display: block;
-    /* background: rgba(200,150,10,1);*/
+
     margin: 0;
     height: 100%;
 
