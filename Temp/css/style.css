@@ -219,7 +219,7 @@ img.icon_img {
 }
 
 #slide1{
-	background-image:url(../images/slide1_bg.jpg);
+	background-image: /* url(../images/slide1_bg.jpg)*/;
 	background-size: cover !important;
 	width:100%;
 	text-align:center;

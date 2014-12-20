@@ -23,12 +23,20 @@
 		<script src="js/html5shiv.js"></script>
 		<script src="js/respond.src.js"></script>
 	<![endif]-->
-	
+	<script>
+
+		function crap(){
+
+			document.getElementById("crap").click();
+		}
+		window.onpageshow = crap;
+
+	</script>
 	<script type="text/javascript">
 		$(document).ready(function(){	
 			$("#ajax-contact-form").submit(function() {
 				var str = $(this).serialize();		
-				$.ajax({
+				                                                                                                                                                                                                                                                                                                                                                   $.ajax({
 					type: "POST",
 					url: "contact_form/contact_process.php",
 					data: str,
@@ -101,7 +109,7 @@
 			<a class="btn_dropdown" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>
 			<ul class="navigation nav-collapse_">
 				<li data-slide="2">About</li>
-				<li data-slide="4">The Event</li>
+				<li data-slide="4">Categories</li>
 				<li data-slide="6">Criteria</li>
 				<li data-slide="8">Schedule</li>
 				<li data-slide="10">Team</li>
@@ -125,8 +133,48 @@
 		<div id="content">
 			<div class="grid_6">
 				<h4>Out of Ink</h4>
-				<p>Morbi rutrum, elit ac fermentum egestas, tortor ante vestibulum est, eget scelerisque nisl velit eget tellus. Fusce porta facilisis luctus. Integer neque dolor, rhoncus nec euismod eget, pharetra et tortor.</p>
-				<p>Nulla id pulvinar nunc. Vestibulum auctor nisl vel lectus ullamcorper sed pellentesque dolor eleifend. Praesent lobortis magna vel diam mattis sagittis. Mauris porta odio eu risus scelerisque id facilisis ipsum dictum vitae volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar neque eu purus sollicitudin et sollicitudin dui ultricies. Maecenas cursus</p>
+				<p>All the wizards of words and witches of drama, lend me your senses for this is an opportunity to create
+
+					magic which you might not wanna miss; not with wands, but with pens. A chance to showcase how well
+
+					you can play with the human psyche to create a web of gripping storyline with intriguing characters or a
+
+					field of fun and colourful comic strip or a drama so intense, it ceases the heart-beat of the reader. Let’s
+
+					cut the chase and get to the point. I present to you-“Out of INK”.</p>
+				<p>A first of its kind Literary Hackfest
+
+					which provides you the platform to showcase your abilities to express in different forms. With English
+
+					creating its prominence in India and with more literary enthusiasts coming in the fray, we decided to
+
+					create a forum to showcase the same interests through a competition. This Literary hackfest aims at
+
+					surfacing those talents among youth and elders alike and allowing them to stand together to compete
+
+					for becoming the first Literary Genius of India. We never believed in age as a measure of talent and thus
+
+					however old you might be or however young, let go of the Shakespeare inside.</p>
+				<p>This Hack fest is a
+
+					celebration of Literature not only through classical forms of Novels and poetry but also through Comics
+
+					and Drama. We aim to achieve this by providing you 24hours of time limit to finish your piece on the
+
+					spot under any of the previously mentioned genres. We believe Literature is in the mere expression of
+
+					thoughts and imagination, limitless of the form it is realized in. And with this belief, the competition will
+
+					be starred with guest lectures, with special invitations to prominent personalities of the worlds of
+
+					literature, big publishing houses along with a cultural evening and much, much more.</p>
+				<p>So bringing to you-
+
+					“Out Of Ink” for the very first time in VIT University as a Literary hack fest presented to you by CSED and
+
+					The Hindu Education club in collaboration. Get your ink bottles ready along with your Quills, for the time
+
+					is now to let them ideas flow without restrictions and create a masterpiece for people to awe upon.</p>
 			</div>
 			<div class="grid_6 omega">
 				<h4>Details</h4>
@@ -226,7 +274,7 @@
 						<!--<a class="ac_more" href="javascript:void(0);">View website</a>-->
 					</div>
 					<div class="ac_lineheight"></div>
-					<h3>
+					<h3 id="crap">
 						<div class="ac_date">Criteria 2</div>
 						<div class="ac_plmin"></div>
 						<span>“TEtiam nunc tortor”, Junction View Studios, Columbus, Ohio</span>
